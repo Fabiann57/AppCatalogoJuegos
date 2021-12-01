@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">AppCatalogoVideojuegos</string>
+    <string name="app_name">Game Book</string>
+    <string name="string_Email">Email</string>
+    <string name="string_Contraseña">Contraseña</string>
+    <string name="string_IniciarSesion">Iniciar sesion</string>
+    <string name="string_AunNoTienesUnaCuenta">¿Aun no tienes una cuenta?</string>
+    <string name="string_Registrarme">Registrarme</string>
+    <string name="string_RegistroDeUsuario">Registro de usuario</string>
+    <string name="string_NombreDeUsuario">Nombre de usuario</string>
+    <string name="string_ValidarContraseña">Validar Contraseña</string>
+    <string name="string_Nombres">Nombres</string>
+    <string name="string_Apellidos">Apellidos</string>
+    <string name="string_TipoDeDocumento">Tipo de documento:</string>
+    <string name="string_CC">C.C.</string>
+    <string name="string_TI">T.I.</string>
+    <string name="string_CE">C.E.</string>
+    <string name="string_NumeroDeDocumento">Número de documento</string>
+    <string name="string_Sexo">Sexo:</string>
+    <string name="string_Masculino">Masculino</string>
+    <string name="string_Femenino">Femenino</string>
+    <string name="string_Celular">Celular</string>
+    <string name="string_Atras">Atrás</string>
+    <string name="string_Limpiar">Limpiar</string>
 </resources>
