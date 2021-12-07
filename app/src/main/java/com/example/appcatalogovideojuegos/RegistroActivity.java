@@ -18,4 +18,8 @@ public class RegistroActivity extends AppCompatActivity {
         Intent anterior=new Intent(this,MainActivity.class);
         startActivity(anterior);
     }
+    public void Siguiente(View view){
+        Intent siguiente= new Intent(this,VisualizarJv.class);
+        startActivity(siguiente);
+    }
 }

@@ -8,88 +8,221 @@
     tools:context=".VisualizarJv">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:id="@+id/img_Juego1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
         android:background="#000000"
+        android:contentDescription="@string/string_img_JuegoPortada"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fondopacman" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/img_Juego2"
         android:layout_width="124dp"
         android:layout_height="154dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/string_img_JuegoPerfil"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/pacman" />
+        app:layout_constraintTop_toBottomOf="@+id/img_Juego1"
+        app:srcCompat="@drawable/pacman"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
-        android:id="@+id/txtvTitulo"
+        android:id="@+id/txt_JuegoTitulo"
         android:layout_width="158dp"
         android:layout_height="39dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/txtvTitulo"
         android:textColor="#090909"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/img_Juego2"
+        app:layout_constraintTop_toBottomOf="@+id/img_Juego1" />
 
     <TextView
-        android:id="@+id/txtDescripcion"
-        android:layout_width="324dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="32dp"
-        android:background="#27423E3E"
-        android:text="@string/txtDescripcion"
-        android:textColor="#0B0909"
+        android:id="@+id/txt_TituloDesarrollador"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/string_Desarrollador"
+        android:textColor="#616161"
         android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/img_Juego2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_JuegoTitulo" />
+
+    <TextView
+        android:id="@+id/txt_JuegoDesarrollador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/string_Desarrollador_ej"
+        android:textSize="16sp"
+        android:textStyle="normal|bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/txt_TituloDesarrollador"
+        app:layout_constraintTop_toBottomOf="@+id/txt_JuegoTitulo" />
+
+    <TextView
+        android:id="@+id/txt_TituloCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/string_Calificacion"
+        android:textColor="#616161"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/img_Juego2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_TituloDesarrollador" />
+
+    <ImageButton
+        android:id="@+id/img_Calificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/string_img_Star"
+        app:layout_constraintStart_toEndOf="@+id/txt_TituloCalificacion"
+        app:layout_constraintTop_toBottomOf="@+id/txt_TituloDesarrollador"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/txt_JuegoCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/string_Calificacion_ej"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_Calificacion"
+        app:layout_constraintTop_toBottomOf="@+id/txt_TituloDesarrollador" />
+
+    <TextView
+        android:id="@+id/txt_TituloFavoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/string_Favoritos"
+        android:textColor="#616161"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/img_Juego2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_TituloCalificacion" />
+
+    <ImageButton
+        android:id="@+id/img_Favoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/string_img_Heart"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_TituloCalificacion"
+        app:srcCompat="@drawable/heart" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/img_Juego2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_Sinopsis"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#27423E3E"
+                android:text="@string/txtDescripcion"
+                android:textColor="#0B0909"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_Comentarios"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_Comentarioej"
+                android:textColor="#616161" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="157dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="16dp"
+        android:id="@+id/btn_Comentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#C8673AB7"
+        android:text="@string/btnComentar"
+        android:textColor="#F9FBE7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_Comprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E80C0C"
+        android:text="@string/btnComprar"
+        android:textColor="#FFFDE7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Calificar"
+        app:layout_constraintStart_toEndOf="@+id/btn_Comentar"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_Calificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#D5FFC107"
         android:text="@string/btnCalificar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion"
-        app:layout_constraintVertical_bias="0.51" />
-
-    <Button
-        android:id="@+id/btnComentar"
-        android:layout_width="158dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="4dp"
-        android:backgroundTint="#C8673AB7"
-        android:text="@string/btnComentar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion"
-        app:layout_constraintVertical_bias="0.51" />
-
-    <Button
-        android:id="@+id/btnComprar"
-        android:layout_width="191dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="44dp"
-        android:backgroundTint="#E80C0C"
-        android:text="@string/btnComprar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/txtvTitulo" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,4 +26,16 @@
     <string name="btnComentar">Comentar</string>
     <string name="btnComprar">Comprar</string>
     <string name="txtvTitulo">PAC-MAN</string>
+    <string name="string_Desarrollador">Desarrollador:</string>
+    <string name="string_Desarrollador_ej">Nammco</string>
+    <string name="string_Calificacion">Calificación:</string>
+    <string name="string_Calificacion_ej">4.5</string>
+    <string name="string_img_JuegoPortada">Portada del juego</string>
+    <string name="string_img_JuegoPerfil">Perfil del juego</string>
+    <string name="string_img_Star">Star</string>
+    <string name="string_img_Heart">Heart</string>
+    <string name="string_Favoritos">Favoritos</string>
+    <string name="string_Comentarioej">La mecánica del juego original creado por Toru Iwatani es muy sencilla, hay un laberinto lleno de puntos que un personaje amarillo y redondo debe comer, evitando ser tocado por varios enemigos o «fantasmas» que recorren el escenario; una vez el personaje ha comido todos los puntos, pasa al siguiente nivel. En Pac-Man 256 se mantiene la esencia del original, el jugador controla al personaje amarillo que debe comer puntos por un escenario, pero en vez de tener niveles, este es un endless runner, cabe aclarar que el juego fue creado para móviles y esta es una mecánica recurrente en esa plataforma.Entonces, te encuentras en un laberinto interminable lleno de fantasmas y bolas de poder, como en el original, al comer esas bolas, Pac-Man puede comerse a los fantasmas, pero este juego tiene varias maneras de acabar con ellos: puedes recolectar diferentes poderes como una pistola láser, un tornado, y hasta clones de Pac-Man. También puedes mejorar los poderes por medio de unas monedas que encuentras en el laberinto o que te entregan en una caja sorpresa, que obtienes cada cierto tiempo.</string>
+    <string name="string_Sinopsis">Sinópsis</string>
+    <string name="string_Comentarios">Comentarios</string>
 </resources>
