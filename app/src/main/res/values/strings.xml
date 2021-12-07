@@ -21,4 +21,9 @@
     <string name="string_Celular">Celular</string>
     <string name="string_Atras">Atrás</string>
     <string name="string_Limpiar">Limpiar</string>
+    <string name="txtDescripcion">El juego consiste en conducir a Pac-Man, una bola amarilla que abre y cierra la boca, por un laberinto. Suma puntos cuando come aquello que encuentra a su paso, bolitas y diferentes frutas, pero debe esquivar a cuatro fantasmas</string>
+    <string name="btnCalificar">Calificar</string>
+    <string name="btnComentar">Comentar</string>
+    <string name="btnComprar">Comprar</string>
+    <string name="txtvTitulo">PAC-MAN</string>
 </resources>
