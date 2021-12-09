@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Game Book</string>
+    <string name="ContentDescriptionLogo">Logo</string>
     <string name="string_Email">Email</string>
     <string name="string_Contraseña">Contraseña</string>
     <string name="string_IniciarSesion">Iniciar sesion</string>
