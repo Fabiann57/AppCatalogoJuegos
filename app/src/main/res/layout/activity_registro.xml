@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/ic_launcher_foreground"
     tools:context=".RegistroActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="31dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="8dp"
+        android:background="@color/primary"
         android:gravity="center"
         android:text="@string/string_Sexo"
         android:textStyle="bold"
@@ -24,6 +26,7 @@
         android:layout_height="37dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
+        android:background="@color/primary"
         android:gravity="center"
         android:text="@string/string_TipoDeDocumento"
         android:textStyle="bold"
@@ -37,6 +40,9 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
+        android:drawableEnd="@drawable/vector_exclamacion"
+        android:drawablePadding="5dp"
+        android:background="@color/secundary"
         android:ems="10"
         android:hint="@string/string_Nombres"
         android:inputType="textPersonName"
@@ -50,10 +56,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/secundary"
+        android:drawableEnd="@drawable/vector_exclamacion"
+        android:drawablePadding="5dp"
         android:ems="10"
         android:hint="@string/string_Email"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -64,9 +74,13 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="32dp"
+        android:drawableEnd="@drawable/vector_exclamacion"
+        android:drawablePadding="5dp"
+        android:background="@color/secundary"
         android:ems="10"
         android:hint="@string/string_Apellidos"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_R_Nombres" />
@@ -90,8 +104,9 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:text="@string/string_RegistroDeUsuario"
-        android:textSize="15sp"
-        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -111,10 +126,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/secundary"
+        android:drawableEnd="@drawable/vector_exclamacion"
+        android:drawablePadding="5dp"
         android:ems="10"
         android:hint="@string/string_Contraseña"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/et_R_Email" />
@@ -123,41 +142,17 @@
         android:id="@+id/et_R_Contraseña2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/secundary"
+        android:drawableEnd="@drawable/vector_exclamacion"
+        android:drawablePadding="5dp"
         android:ems="10"
         android:hint="@string/string_ValidarContraseña"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/et_R_Contraseña" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
-
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top"
-        tools:layout_editor_absoluteY="388dp" />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
@@ -165,6 +160,7 @@
         android:layout_height="39dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
+        android:background="@color/secundary"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/et_R_Tipo_Documento"
@@ -209,6 +205,7 @@
         android:layout_height="31dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
+        android:background="@color/secundary"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
@@ -228,40 +225,38 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_R_Registrarme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:background="#806EA794"
         android:onClick="Registrar"
         android:text="@string/string_Registrarme"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btn_R_Inicio"
+        app:layout_constraintStart_toEndOf="@+id/btn_R_Atras" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_R_Atras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
-        android:background="#806EA794"
-        android:onClick="anterior"
+        android:background="@color/secundary"
+        android:onClick="IrAAtras"
         android:text="@string/string_Atras"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_R_Inicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:background="#236EA794"
-        android:onClick="Siguiente"
-        android:text="@string/string_Limpiar"
+        android:background="@color/secundary"
+        android:onClick="IrAHome"
+        android:text="@string/string_Inicio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -272,6 +267,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
+        android:background="@color/secundary"
         android:ems="10"
         android:hint="@string/string_Celular"
         android:inputType="number"
@@ -287,9 +283,11 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
+        android:background="@color/secundary"
         android:ems="10"
         android:hint="@string/string_NumeroDeDocumento"
         android:inputType="number"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_R_Tipo_Documento" />

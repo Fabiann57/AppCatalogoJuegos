@@ -32,13 +32,13 @@ public class MainActivity extends AppCompatActivity {
         //});
     }
 
-    public void Siguiente(View view) {
-        Intent siguiente = new Intent(this, RegistroActivity.class);
-        startActivity(siguiente);
+    public void IrARegistro (View view) {
+        Intent i = new Intent(this, RegistroActivity.class);
+        startActivity(i);
     }
 
     //Metodo para consultar un Usuario
-    public void Buscar(View view)
+    public void IniciarSesion(View view)
     {
         //Se abre la base de datos en modo lectura y escritura
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);

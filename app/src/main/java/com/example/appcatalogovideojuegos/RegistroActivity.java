@@ -29,14 +29,14 @@ public class RegistroActivity extends AppCompatActivity {
         et_apellidos=(EditText) findViewById(R.id.et_R_Apellidos);
 
     }
-    public void anterior(View view)
+    public void IrAAtras(View view)
     {
-        Intent anterior=new Intent(this,MainActivity.class);
-        startActivity(anterior);
+        Intent i=new Intent(this,MainActivity.class);
+        startActivity(i);
     }
-    public void Siguiente(View view){
-        Intent siguiente= new Intent(this,VisualizarJv.class);
-        startActivity(siguiente);
+    public void IrAHome(View view){
+        Intent i= new Intent(this,HomeActivity.class);
+        startActivity(i);
     }
 
     //Metodo para registrar un usuario

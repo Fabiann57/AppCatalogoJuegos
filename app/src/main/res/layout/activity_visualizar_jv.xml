@@ -193,25 +193,11 @@
         android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#C8673AB7"
-        android:text="@string/btnComentar"
+        android:onClick="IrAHome2"
+        android:text="@string/string_Inicio"
         android:textColor="#F9FBE7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
-
-    <Button
-        android:id="@+id/btn_Comprar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#E80C0C"
-        android:text="@string/btnComprar"
-        android:textColor="#FFFDE7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_Calificar"
-        app:layout_constraintStart_toEndOf="@+id/btn_Comentar"
         tools:ignore="TextContrastCheck" />
 
     <Button
@@ -221,7 +207,8 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#D5FFC107"
-        android:text="@string/btnCalificar"
+        android:onClick="IrAPerfil"
+        android:text="@string/string_Perfil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/string_LosMasJugados"
+                android:textColor="@color/primary"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_H_1"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp"
+                            app:srcCompat="@drawable/perfil2" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Juego1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_AngryBirds" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Desarrollador1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_AngryBirdsDesarrollador" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_H_2"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp"
+                            app:srcCompat="@drawable/perfil1" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Juego2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_Asphalt" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Desarrollador2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_AsphaltDesarrollador" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_H_3"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp"
+                            app:srcCompat="@drawable/perfil4" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Juego3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_CrashBandicoot" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Desarrollador3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_CrashBandicootDesarrollador" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_H_4"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp"
+                            app:srcCompat="@drawable/perfil3" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Juego4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_CallOfDuty" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Desarrollador4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_CallOfDutyDesarrollador" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@color/black"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/btn_H_Atras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/secundary"
+                    android:minHeight="48dp"
+                    android:onClick="IrARegistro"
+                    android:text="@string/string_Atras" />
+
+                <Button
+                    android:id="@+id/btn_H_Favoritos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/primary"
+                    android:text="@string/string_Favoritos" />
+
+                <Button
+                    android:id="@+id/btn_H_MiPerfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/primary"
+                    android:minHeight="48dp"
+                    android:onClick="IrAPerfil"
+                    android:text="@string/string_perfil" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_H_5"
+                            android:layout_width="240dp"
+                            android:layout_height="240dp"
+                            android:onClick="IrAPacman"
+                            app:srcCompat="@drawable/pacman" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Juego5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_Pacman" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Desarrollador5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_PacmanDesarrollador" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_H_6"
+                            android:layout_width="240dp"
+                            android:layout_height="240dp"
+                            app:srcCompat="@drawable/perfil7" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Juego6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_LosSimpsons" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Desarrollador6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_LosSimpsonsDesarrollador" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_H_7"
+                            android:layout_width="240dp"
+                            android:layout_height="240dp"
+                            app:srcCompat="@drawable/portada6" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Juego7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_Lol" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Desarrollador7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_LolDesarrollador" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_H_8"
+                            android:layout_width="240dp"
+                            android:layout_height="240dp"
+                            app:srcCompat="@drawable/perfil5" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Juego8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_Halo" />
+
+                        <TextView
+                            android:id="@+id/txt_H_Desarrollador8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_HaloDesarrollador" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/string_Recomendados"
+                android:textColor="@color/primary"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

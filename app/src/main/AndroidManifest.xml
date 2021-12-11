@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityPerfil"
+            android:exported="false" />
+        <activity
             android:name=".VisualizarJv"
             android:exported="false" />
         <activity

@@ -21,7 +21,7 @@
     <string name="string_Femenino">Femenino</string>
     <string name="string_Celular">Celular</string>
     <string name="string_Atras">Atrás</string>
-    <string name="string_Limpiar">Limpiar</string>
+    <string name="string_Inicio">Inicio</string>
     <string name="txtDescripcion">El juego consiste en conducir a Pac-Man, una bola amarilla que abre y cierra la boca, por un laberinto. Suma puntos cuando come aquello que encuentra a su paso, bolitas y diferentes frutas, pero debe esquivar a cuatro fantasmas</string>
     <string name="btnCalificar">Calificar</string>
     <string name="btnComentar">Comentar</string>
@@ -46,4 +46,29 @@
     <string name="number_Celular">Celular:</string>
     <string name="btn_Regresar">Regresar</string>
     <string name="string_perfil">MI PERFIL</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="string_LosMasJugados">Los más jugados</string>
+    <string name="string_Recomendados">Recomendados</string>
+
+    <string name="string_Asphalt">Asphalt</string>
+    <string name="string_AsphaltDesarrollador">Gameloft</string>
+    <string name="string_AngryBirds">Angry Birds</string>
+    <string name="string_AngryBirdsDesarrollador">Rovio Entertainment</string>
+    <string name="string_CrashBandicoot">Crash Bandicoot</string>
+    <string name="string_CrashBandicootDesarrollador">Naughty Dog</string>
+    <string name="string_CallOfDuty">Call Of Duty</string>
+    <string name="string_CallOfDutyDesarrollador">Activision</string>
+    <string name="string_Pacman">Pacman</string>
+    <string name="string_PacmanDesarrollador">Namco</string>
+    <string name="string_LosSimpsons">Los Simspons</string>
+    <string name="string_LosSimpsonsDesarrollador">Radical Entertainment</string>
+    <string name="string_Lol">League Of Legends</string>
+    <string name="string_LolDesarrollador">Riot Games</string>
+    <string name="string_Halo">Halo</string>
+    <string name="string_HaloDesarrollador">Microsoft</string>
+    <string name="string_Perfil">Perfil</string>
 </resources>
