@@ -78,7 +78,7 @@ public class RegistroActivity extends AppCompatActivity {
         }
         else
         {
-            Toast.makeText(this,"Los campos con \"*\" son obligatorios",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Los campos con \"!\" son obligatorios",Toast.LENGTH_LONG).show();
         }
     }
 
