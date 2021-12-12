@@ -65,12 +65,17 @@ public class RegistroActivity extends AppCompatActivity {
                 //Insertar el registro en la tabla
                 BaseDeDatos.insert("Usuarios",null,registro);
                 BaseDeDatos.close();
-                et_email.setText("");
-                et_contraseña.setText("");
-                et_contraseña2.setText("");
-                et_nombres.setText("");
-                et_apellidos.setText("");
-                Toast.makeText(this,"Usuario Registrado, pruebe devolverse e Iniciar sesión",Toast.LENGTH_LONG).show();
+                //et_email.setText("");
+                //et_contraseña.setText("");
+                //et_contraseña2.setText("");
+                //et_nombres.setText("");
+                //et_apellidos.setText("");
+                Toast.makeText(this,"Usuario Registrado - Bienvenido !",Toast.LENGTH_LONG).show();
+                Intent i= new Intent(this,ActivityPerfil.class);
+                i.putExtra("Correo", et_email.getText().toString());
+                i.putExtra("Nombres", et_nombres.getText().toString());
+                i.putExtra("Apellidos", et_apellidos.getText().toString());
+                startActivity(i);
             }
             else{
                 Toast.makeText(this,"Las contraseñas deben coincidir",Toast.LENGTH_LONG).show();
